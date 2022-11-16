@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>힘내요 강재연!</title>
+
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding:0;ㄴ
+            font-family: 'Poppins', sans-serif;
+        }
+        .cover {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.3;
+            z-index: -2;
+        }
+
+        .backgroundImg {
+            width:100%;
+            position: absolute;
+            left:0;
+            top:0;
+            background-image: url(./5_대지\ 1.jpg);
+            background-position: center;
+            background-repeat : no-repeat;
+            background-size : cover;
+            z-index: -2;
+
+            color:white;
+        }
+
+        .time {
+            font-size: 80px;
+            font-weight: bold;
+
+        }
+
+        .greeting {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .todo {
+            font-size: 30px;
+            font-weight: bold;
+            font-style:oblique
+        }
+
+        .author {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .main {
+            width: 100vw;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-shadow: 0.5px 0.5px 0.5px black;
+        }
+
+        .quote {
+            width: 100vw;
+            height: 20vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="cover"></div>
+    <div class="backgroundImg">
+        <div class="main">
+            <div class="cover"></div>
+            <div id="time" class="time">00:00</div>
+            <div class="greeting">Hello, 재연♥</div>
+            <div class="todo">세상 어떤 술도 너만은 못하다.</div>
+        </div>
+        <div class="quote">
+            <div id="author" class="author">- 강재연 -</div>
+            <div id="content" class="content">" 반가워 "</div>
+        </div>
+    </div>
+</body>
+
+</html>
